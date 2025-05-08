@@ -14,7 +14,7 @@ setInterval(() => {
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
     const imageData = canvas.toDataURL('image/jpeg');
 
-    fetch('https://3345-35-185-28-128.ngrok-free.app', {
+    fetch('https://ac17-35-185-28-128.ngrok-free.app', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ image: imageData })
